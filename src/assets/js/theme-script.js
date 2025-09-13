@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function setThemeAndSidebarTheme(theme, sidebarTheme, color, layout, topbar) {
     // Check if the sidebar element exists
     if (!sidebarElement) {
-      console.error('Sidebar element not found');
+      //   console.error('Sidebar element not found');
       return;
     }
 
@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', function () {
   layoutRadios.forEach((radio) => radio.addEventListener('change', handleInputChange));
   topbarRadios.forEach((radio) => radio.addEventListener('change', handleInputChange));
   sidebarBgRadios.forEach((radio) => radio.addEventListener('change', handleSidebarBgChange));
-  resetButton.addEventListener('click', resetThemeAndSidebarThemeAndColorAndBg);
+  resetButton?.addEventListener('click', resetThemeAndSidebarThemeAndColorAndBg);
 
   // Initial setup from localStorage
   const savedTheme = localStorage.getItem('theme') || 'light';
