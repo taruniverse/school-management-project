@@ -11,4 +11,8 @@ export const routes: Routes = [
     path: 'sign-in',
     component: SignIn,
   },
+  {
+    path: 'school',
+    loadChildren: () => import('./main/main-module').then((m) => m.MainModule),
+  },
 ];
