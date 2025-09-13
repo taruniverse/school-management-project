@@ -1,16 +1,35 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainModule } from './main-module';
 import { Main } from './main';
+import { Students } from './lists/students/students';
+import { AddStudent } from '../student/add-student/add-student';
+import { Promotion } from '../student/promotion/promotion';
+import { Parents } from './lists/parents/parents';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: Main,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard-module').then((m) => m.DashboardModule),
+      },
+      {
+        path: 'all-students',
+        component: Students,
+      },
+      {
+        path: 'add-student',
+        component: AddStudent,
+      },
+      {
+        path: 'promotion-students',
+        component: Promotion,
+      },
+      {
+        path: 'all-parents',
+        component: Parents,
       },
     ],
   },
