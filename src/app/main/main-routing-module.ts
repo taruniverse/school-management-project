@@ -5,7 +5,7 @@ import { Main } from './main';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     component: Main,
     children: [
       {

@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { SignIn } from './sign-in/sign-in';
+import { Maintenance } from './maintenance/maintenance';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,15 @@ export const routes: Routes = [
   },
   {
     path: 'school',
+    pathMatch: 'full',
+    redirectTo: 'school/dashboard',
+  },
+  {
+    path: 'school',
     loadChildren: () => import('./main/main-module').then((m) => m.MainModule),
+  },
+  {
+    path: 'under-maintenance',
+    component: Maintenance,
   },
 ];

@@ -1,1 +1,9 @@
-<p>dashboard works!</p>
+@if (userType == 'admin') {
+<app-admin />
+} @else if (userType == 'teacher') {
+<app-teacher />
+} @else if (userType == 'parent') {
+<app-parent />
+} @else if (userType == 'student') {
+<app-student />
+}
