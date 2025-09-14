@@ -160,6 +160,7 @@
                             type="button"
                             class="btn btn-primary w-100"
                             [disabled]="!formattedTime()"
+                            (click)="verifyOTP($event)"
                           >
                             Verify OTP
                           </button>

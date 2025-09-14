@@ -7,7 +7,94 @@
 @import url(./assets/plugins/owlcarousel/owl.carousel.min.css);
 @import url(./assets/plugins/owlcarousel/owl.theme.default.min.css);
 @import url(./assets/plugins/daterangepicker/daterangepicker.css);
+@import url(./assets/css/fontawesome.min.css);
+@import url(./assets/css/all.min.css);
 
 .pointer {
   cursor: pointer;
+}
+
+.apexcharts-flip-y[_ngcontent-ng-c3854639884] {
+  transform: scaleY(-1) translateY(-100%);
+  transform-origin: top;
+  transform-box: fill-box;
+}
+.apexcharts-flip-x[_ngcontent-ng-c3854639884] {
+  transform: scaleX(-1);
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.apexcharts-legend[_ngcontent-ng-c3854639884] {
+  display: flex;
+  overflow: auto;
+  padding: 0 10px;
+}
+.apexcharts-legend.apexcharts-legend-group-horizontal[_ngcontent-ng-c3854639884] {
+  flex-direction: column;
+}
+.apexcharts-legend-group[_ngcontent-ng-c3854639884] {
+  display: flex;
+}
+.apexcharts-legend-group-vertical[_ngcontent-ng-c3854639884] {
+  flex-direction: column-reverse;
+}
+.apexcharts-legend.apx-legend-position-bottom[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-top[_ngcontent-ng-c3854639884] {
+  flex-wrap: wrap;
+}
+.apexcharts-legend.apx-legend-position-right[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-left[_ngcontent-ng-c3854639884] {
+  flex-direction: column;
+  bottom: 0;
+}
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-left[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-right[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-left[_ngcontent-ng-c3854639884] {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-center[_ngcontent-ng-c3854639884] {
+  justify-content: center;
+  align-items: center;
+}
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right[_ngcontent-ng-c3854639884],
+.apexcharts-legend.apx-legend-position-top.apexcharts-align-right[_ngcontent-ng-c3854639884] {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.apexcharts-legend-series[_ngcontent-ng-c3854639884] {
+  cursor: pointer;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.apexcharts-legend-text[_ngcontent-ng-c3854639884] {
+  position: relative;
+  font-size: 14px;
+}
+.apexcharts-legend-text[_ngcontent-ng-c3854639884] *[_ngcontent-ng-c3854639884],
+.apexcharts-legend-marker[_ngcontent-ng-c3854639884] *[_ngcontent-ng-c3854639884] {
+  pointer-events: none;
+}
+.apexcharts-legend-marker[_ngcontent-ng-c3854639884] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 1px;
+}
+.apexcharts-legend-series.apexcharts-no-click[_ngcontent-ng-c3854639884] {
+  cursor: auto;
+}
+.apexcharts-legend[_ngcontent-ng-c3854639884]
+  .apexcharts-hidden-zero-series[_ngcontent-ng-c3854639884],
+.apexcharts-legend[_ngcontent-ng-c3854639884]
+  .apexcharts-hidden-null-series[_ngcontent-ng-c3854639884] {
+  display: none !important;
+}
+.apexcharts-inactive-legend[_ngcontent-ng-c3854639884] {
+  opacity: 0.45;
 }

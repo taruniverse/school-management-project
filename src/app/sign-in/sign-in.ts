@@ -1,4 +1,5 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, effect, inject, signal } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,6 +8,7 @@ import { Component, effect, signal } from '@angular/core';
   styleUrl: './sign-in.css',
 })
 export class SignIn {
+  router = inject(Router);
   emailEntered: boolean = false;
   intervalId: any;
   time = signal(10);
@@ -17,6 +19,10 @@ export class SignIn {
     effect(() => {
       this.formattedTime.set(this.transform(this.time()));
     });
+  }
+
+  ngOnDestroy() {
+    this.clearTimer();
   }
 
   sendOTP() {
@@ -47,7 +53,7 @@ export class SignIn {
     }
   }
 
-  ngOnDestroy() {
-    this.clearTimer();
+  verifyOTP(event: any) {
+    this.router.navigate(['school/dashboard']);
   }
 }

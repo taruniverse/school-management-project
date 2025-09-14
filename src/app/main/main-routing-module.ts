@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Main } from './main';
 import { Students } from './lists/students/students';
-import { AddStudent } from '../student/add-student/add-student';
-import { Promotion } from '../student/promotion/promotion';
+import { AddStudent } from './student/add-student/add-student';
+import { Promotion } from './student/promotion/promotion';
 import { Parents } from './lists/parents/parents';
 
 const routes: Routes = [
